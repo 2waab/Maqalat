@@ -70,10 +70,8 @@ listFont.forEach(li => {
         listFont.forEach(element => {
             element.classList.remove("active");
             li.classList.add("active");
-            let allPragraph = document.querySelectorAll(".content p");
-            allPragraph.forEach(p => {
-                p.style.fontSize = `${li.dataset.size}`;
-            });
+            let allPragraph = document.querySelector(".content");
+            allPragraph.style.fontSize = `${li.dataset.size}`;
         });
     });
 });
